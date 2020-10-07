@@ -6,7 +6,7 @@ Make sure to install all the dependencies by simply running the following comman
 
 ### `npm i`
 
-In the project directory, you can run:
+When the dependencies are installed, you can run it by typing the following command:
 
 ### `npm start`
 
