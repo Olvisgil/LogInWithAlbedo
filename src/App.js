@@ -17,17 +17,8 @@ class LogInWithAlbedo extends Component {
               albedo.publicKey({
               })
                 .then(res => {
-                  const intent = res.intent
-                  const pubkey = res.pubkey
-                  const signature = res.signature
-                  const signed_message = res.signed_message
-                  const newAlbedoUser = {
-                    intent,
-                    pubkey,
-                    signature,
-                    signed_message
-                  }
-                  console.log(newAlbedoUser)
+                  const {intent, pubkey, signature, signed_message} = res
+                  console.log({intent, pubkey, signature, signed_message})
                 })
             }}> Login With <Image
               style={{ width: '55px' }}
